@@ -1,0 +1,15 @@
+
+
+Création du Package site:
+
+Création platinum:
+
+	*Nombre de page 5-7
+	*HTML5, CSS3, Bootstrap 4, Javascript
+	*Mise à jour périodique
+	*Veille technologique
+	*Jusqu'à 6 modifications pré et post lancement
+	*BDD avec php
+	*7 jours ouvrés
+	
+Prix: 350€
