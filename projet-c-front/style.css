@@ -1,15 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
+
+ .navbar-brand img {
+	width: 60px !important;
+}
 * {
 	margin: 0;
 	padding: 0;
-	overflow-x: hidden;
+	
 }
 html {
 	scroll-behavior: smooth;
   }
   body {
 	font-family: 'Roboto', sans-serif !important;
+	overflow-x: hidden;
   }
 
 .container-fluid{
@@ -228,3 +233,35 @@ nav .nav-link:hover {
 }
 
 
+#qui-sommes-nous p {
+	color: #3e4555;
+	width: 70%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+
+/* début de footer */
+footer {
+	margin-top: 5%;
+	background: #7313c3;
+	color: #fff;
+}
+footer ul {
+	list-style-type: none;
+}
+footer .icons {
+	font-size: 30px;
+	color: #fff;
+	margin-left: 20%;
+	padding: 10px 0 0 10px;
+}
+footer .icon-paie {
+	font-size: 30px;
+}
+
+footer .icon-paie:hover {
+	color: #ffffff;
+	cursor: pointer;
+}
+/* fin de footer */
