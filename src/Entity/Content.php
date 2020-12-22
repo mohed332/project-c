@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\ContentRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -20,45 +22,27 @@ class Content
     /**
      * @ORM\Column(type="integer")
      */
+    private $quantity;
+
+    /**
+     * @ORM\ManyToOne(targetEntity=Order::class, inversedBy="contents")
+     * @ORM\JoinColumn(nullable=false)
+     */
     private $command;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\ManyToOne(targetEntity=Product::class)
+     * @ORM\JoinColumn(nullable=false)
      */
     private $product;
 
-    /**
-     * @ORM\Column(type="integer")
-     */
-    private $quantity;
+    public function __construct()
+    {
+    }
 
     public function getId(): ?int
     {
         return $this->id;
-    }
-
-    public function getCommand(): ?int
-    {
-        return $this->command;
-    }
-
-    public function setCommand(int $command): self
-    {
-        $this->command = $command;
-
-        return $this;
-    }
-
-    public function getProduct(): ?int
-    {
-        return $this->product;
-    }
-
-    public function setProduct(int $product): self
-    {
-        $this->product = $product;
-
-        return $this;
     }
 
     public function getQuantity(): ?int
@@ -72,4 +56,30 @@ class Content
 
         return $this;
     }
+
+    public function getCommand(): ?Order
+    {
+        return $this->command;
+    }
+
+    public function setCommand(?Order $command): self
+    {
+        $this->command = $command;
+
+        return $this;
+    }
+
+    public function getProduct(): ?Product
+    {
+        return $this->product;
+    }
+
+    public function setProduct(?Product $product): self
+    {
+        $this->product = $product;
+
+        return $this;
+    }
+
+
 }

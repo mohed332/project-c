@@ -18,24 +18,19 @@ class Product
     private $id;
 
     /**
-     * @ORM\Column(type="integer")
-     */
-    private $id_product;
-
-    /**
      * @ORM\Column(type="string", length=255)
      */
-    private $productname;
+    private $name;
 
     /**
      * @ORM\Column(type="integer")
      */
-    private $productprice;
+    private $price;
 
     /**
      * @ORM\Column(type="string", length=500)
      */
-    private $productdescription;
+    private $description;
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -47,63 +42,76 @@ class Product
         return $this->id;
     }
 
-    public function getIdProduct(): ?int
+    /**
+     * @return mixed
+     */
+    public function getName()
     {
-        return $this->id_product;
+        return $this->name;
     }
 
-    public function setIdProduct(int $id_product): self
+    /**
+     * @param mixed $name
+     * @return Product
+     */
+    public function setName($name)
     {
-        $this->id_product = $id_product;
-
+        $this->name = $name;
         return $this;
     }
 
-    public function getProductname(): ?string
+    /**
+     * @return mixed
+     */
+    public function getPrice()
     {
-        return $this->productname;
+        return $this->price;
     }
 
-    public function setProductname(string $productname): self
+    /**
+     * @param mixed $price
+     * @return Product
+     */
+    public function setPrice($price)
     {
-        $this->productname = $productname;
-
+        $this->price = $price;
         return $this;
     }
 
-    public function getProductprice(): ?int
+    /**
+     * @return mixed
+     */
+    public function getDescription()
     {
-        return $this->productprice;
+        return $this->description;
     }
 
-    public function setProductprice(int $productprice): self
+    /**
+     * @param mixed $description
+     * @return Product
+     */
+    public function setDescription($description)
     {
-        $this->productprice = $productprice;
-
+        $this->description = $description;
         return $this;
     }
 
-    public function getProductdescription(): ?string
-    {
-        return $this->productdescription;
-    }
-
-    public function setProductdescription(string $productdescription): self
-    {
-        $this->productdescription = $productdescription;
-
-        return $this;
-    }
-
-    public function getPhoto(): ?string
+    /**
+     * @return mixed
+     */
+    public function getPhoto()
     {
         return $this->photo;
     }
 
-    public function setPhoto(string $photo): self
+    /**
+     * @param mixed $photo
+     * @return Product
+     */
+    public function setPhoto($photo)
     {
         $this->photo = $photo;
-
         return $this;
     }
+
 }
