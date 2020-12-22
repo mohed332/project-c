@@ -1,73 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="https://kit.fontawesome.com/fcc0eb1910.js" crossorigin="anonymous"></script>
-    <title>Document</title> 
-</head>
-<body>
- 
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome! {% endblock %}</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <script src="https://kit.fontawesome.com/fcc0eb1910.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
     <!-- début de navbar -->
     <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light  ">
         <a class="navbar-brand" href="#"><img src="./imgs/logo/logo2 " id="logo" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <!-- navbar primary -->
-          <ul class="navbar-nav" id="nav-primaire">
-            <a class="nav-link" href="#package-creation">Créon Votre site</a>
-            <a class="nav-link" href="#package-cours">Apprenez à Coder</a>
-            <a class="nav-link" href="#contactez-nous">Contactez Nous</a>
-            <a class="nav-link" href="#qui-sommes-nous">Qui sommes Nous?</a>
-          </ul>
-          <!-- fin de navbar primary -->
+            <!-- navbar primary -->
+            <ul class="navbar-nav" id="nav-primaire">
+                <a class="nav-link" href="#package-creation">Créon Votre site</a>
+                <a class="nav-link" href="#package-cours">Apprenez à Coder</a>
+                <a class="nav-link" href="#contactez-nous">Contactez Nous</a>
+                <a class="nav-link" href="#qui-sommes-nous">Qui sommes Nous?</a>
+            </ul>
+            <!-- fin de navbar primary -->
 
-          <!-- navbar avec cart et profil -->
+            <!-- navbar avec cart et profil -->
 
-          <!-- pour la page admin -->
-          <ul class="navbar-nav ml-auto d-flex" id="nav-secondaire">
-            <li class="nav-item d-flex" id="admin">
-              <a href="#" class="nav-link"><i class="fas fa-users-cog"></i> Admin </a>
-            </li>
+            <!-- pour la page admin -->
+            <ul class="navbar-nav ml-auto d-flex" id="nav-secondaire">
+                <li class="nav-item d-flex" id="admin">
+                    <a href="#" class="nav-link"><i class="fas fa-users-cog"></i> Admin </a>
+                </li>
 
-            <!-- pour connexion/déconnexion -->
-            <li class="nav-item">
-              <a href="login-register/login.html" class="nav-link">
-                <i class="fas fa-user"></i> Login/Register
-              </a>
-            </li>
-            <!-- pour la cart  -->
-            <li class="nav-item">
-              <a href="./panier/panier.html" class="nav-link">
-                <span class="badge badge-pill red">1</span>
-                <i class="fas fa-shopping-cart"></i>
-              </a>
-            </li>
+                <!-- pour connexion/déconnexion -->
+                <li class="nav-item">
+                    <a href="login-register/login.html" class="nav-link">
+                        <i class="fas fa-user"></i> Login/Register
+                    </a>
+                </li>
+                <!-- pour la cart  -->
+                <li class="nav-item">
+                    <a href="./panier/panier.html" class="nav-link">
+                        <span class="badge badge-pill red">1</span>
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </li>
 
-            <!-- pour le profil -->
-            <li class="nav-item avatar dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-55" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                <img src="imgs/img-avatar.png" class="rounded-circle z-depth-0"
-                  alt="avatar image">
-              </a>
-              <div class="dropdown-menu dropdown-menu-lg-right dropdown-secondary"
-                aria-labelledby="navbarDropdownMenuLink-55">
-                <a class="dropdown-item" href="./profil/profil.html">Voir Profil</a>
-                <a class="dropdown-item" href="#">Déconnexion</a>
-              </div>
-            </li>
-          </ul>
-          <!-- fin de navbar avec cart et profil -->
+                <!-- pour le profil -->
+                <li class="nav-item avatar dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-55" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        <img src="imgs/img-avatar.png" class="rounded-circle z-depth-0"
+                             alt="avatar image">
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-lg-right dropdown-secondary"
+                         aria-labelledby="navbarDropdownMenuLink-55">
+                        <a class="dropdown-item" href="./profil/profil.html">Voir Profil</a>
+                        <a class="dropdown-item" href="#">Déconnexion</a>
+                    </div>
+                </li>
+            </ul>
+            <!-- fin de navbar avec cart et profil -->
         </div>
-      </nav>
+    </nav>
     <!-- fin de navbar -->
-    
     <!-- début de header -->
     
 
@@ -80,44 +77,6 @@
     </div>
  
     <!-- fin de header -->
-    <!-- début de projet -->
-        <!-- <div class="container-fluid" id="projet">
-          <h1 class="display-4 text-center">LES PROJETS</h1>
-          <ul  class="caption-style-1">
-            <li data-aos="fade-left">
-              <img src="imgs/image400-300.png" alt="">
-              <div class="caption">
-                <div class="blur"></div>
-                <div class="caption-text">
-                  <h1>Project-1</h1>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, voluptas?</p>
-                </div>
-              </div>
-            </li>
-            <li data-aos="fade-up">
-              <img src="imgs/image400-300.png" alt="">
-              <div class="caption">
-                <div class="blur"></div>
-                <div class="caption-text">
-                  <h1>Projet-2</h1>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, animi?</p>
-                </div>
-              </div>
-            </li>
-            <li data-aos="fade-right">
-              <img src="imgs/image400-300.png" alt="">
-              <div class="caption">
-                <div class="blur"></div>
-                <div class="caption-text">
-                  <h1>Projet-3</h1>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, ipsam?</p>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div> -->
-    <!-- fin de projet -->
-
     <!-- début de package création -->
     <div class="container-fluid" id="package-creation">
       <div class="pricing4 py-5 bg-light">
@@ -205,7 +164,6 @@
       </div>
     </div>
     <!-- fin de package création -->
-
     <!-- début de package cours -->
     <div class="container-fluid" id="package-cours">
       <div class="pricing4 py-5 bg-light">
@@ -287,92 +245,90 @@
       </div>
     </div>
     <!-- fin de package cours -->
-
     <!-- début de contactez nous -->
-    
+
     <div class="container" id="contactez-nous">
-      <div>
-        <h4 class="display-4 text-center">Contactez Nous</h4>          
-      </div>
-      <form action="" method="post">
-        <div class="form-group">
-          <label for="nom">Nom:</label>
-          <input type="text" name="nom" class="form-control" placeholder="Nom">
+        <div>
+            <h4 class="display-4 text-center">Contactez Nous</h4>
         </div>
-        
-        <div class="form-group">
-          <label for="prenom">Prenom:</label>
-          <input type="text" name="prenom" class="form-control" placeholder="Prenom">
-        </div>
+        <form action="" method="post">
+            <div class="form-group">
+                <label for="nom">Nom:</label>
+                <input type="text" name="nom" class="form-control" placeholder="Nom">
+            </div>
 
-        <div class="form-group">
-          <label for="email">E-mail</label>
-          <input type="email" name="email" id="email" placeholder="Votre mail" class="form-control">
-        </div>
+            <div class="form-group">
+                <label for="prenom">Prenom:</label>
+                <input type="text" name="prenom" class="form-control" placeholder="Prenom">
+            </div>
 
-        <div class="form-group">
-          <label for="message">Message:</label>
-          <textarea name="message" id="message" cols="50" rows="10" class="form-control" placeholder="Votre message"></textarea>
-        </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Votre mail" class="form-control">
+            </div>
 
-        <div class="form-group text-center">
-          <input type="submit" name="submit" id="submit-btn" class="btn btn-primary">
-        </div>        
-      </form>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" cols="50" rows="10" class="form-control" placeholder="Votre message"></textarea>
+            </div>
+
+            <div class="form-group text-center">
+                <input type="submit" name="submit" id="submit-btn" class="btn btn-primary">
+            </div>
+        </form>
     </div>
     <!-- fin de contactez nous -->
     <!-- début de propos de nous -->
     <div class="container" id="qui-sommes-nous">
-      <div class="row text-center">
-        <div class="col-12">
-          <h4 class="display-4">Qui Sommes Nous?</h4>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-            Impedit hic perferendis totam iste illum et nisi delectus 
-            ipsum placeat voluptatum vitae quas optio minus velit expl
-            icabo accusantium, praesentium voluptates? Laudantium ut vo
-            luptatum veritatis, dolores ratione numquam nihil 
-            vel tempora quos sequi porro velit corrupti esse 
-            exercitationem, non ullam ad aut!
-          </p>
+        <div class="row text-center">
+            <div class="col-12">
+                <h4 class="display-4">Qui Sommes Nous?</h4>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Impedit hic perferendis totam iste illum et nisi delectus
+                    ipsum placeat voluptatum vitae quas optio minus velit expl
+                    icabo accusantium, praesentium voluptates? Laudantium ut vo
+                    luptatum veritatis, dolores ratione numquam nihil
+                    vel tempora quos sequi porro velit corrupti esse
+                    exercitationem, non ullam ad aut!
+                </p>
+            </div>
         </div>
-      </div>
     </div>
     <!-- fin e propos de nous -->
+
+
     <!-- début de footer -->
     <footer class="container-fluid">
-      <div class="row text-center">
-        <div class="col-sm-3">
-          <ul class="d-flex">
-            <li><a href="#"><i class="fab fa-facebook icons"></i></a></li>
-            <li><a href="#"><i class="fab fa-twitter icons"></i></a></li>
-            <li><a href="#"><i class="fab fa-youtube icons"></i></a></li>
-          </ul>
-        </div>
-        <p class="lead col-md-6">
-          &copy; Cette site web est créé par les jeunes de webforce 3
-        </p>
+        <div class="row text-center">
+            <div class="col-sm-3">
+                <ul class="d-flex">
+                    <li><a href="#"><i class="fab fa-facebook icons"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter icons"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube icons"></i></a></li>
+                </ul>
+            </div>
+            <p class="lead col-md-6">
+                &copy; Cette site web est créé par les jeunes de webforce 3
+            </p>
 
-      </div>
-      <div class="row text-center">
-        <div class="col-md-12 ">
-          <p class="lead">Paiement: 
-            <a href="#"><i class="fab fa-cc-paypal icon-paie"></i></a>
-            <a href="#"><i class="fab fa-stripe icon-paie"></i></a>
-          </p>
-        </div>      
-      </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-12 ">
+                <p class="lead">Paiement:
+                    <a href="#"><i class="fab fa-cc-paypal icon-paie"></i></a>
+                    <a href="#"><i class="fab fa-stripe icon-paie"></i></a>
+                </p>
+            </div>
+        </div>
     </footer>
     <!-- fin de footer -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>    
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      offset:300,
-      duration:800,
-    });
-  </script>
-</body>
+
+        {% block javascripts %}
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        {% endblock %}
+    </body>
 </html>

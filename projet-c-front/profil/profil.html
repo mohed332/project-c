@@ -1,0 +1,165 @@
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profil.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/fcc0eb1910.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row text-center justify-content-center">
+            <div class="col-md-5" id="info-perso">
+                <h1 class="display-4">Info Perso</h1>
+                <img src="../imgs/img-avatar.png" alt="" class="rounded-circle" id="img-avatar">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <p class="lead">Nom</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control-plaintext" readonly value="lorem">
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="row">
+                    <div class="col-sm-3">
+                        <p class="lead">Prenom</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="text" name="prenom" class="form-control-plaintext" readonly value="lorem">
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="row">
+                    <div class="col-sm-3">
+                        <p class="lead">E-mail</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="mail" readonly class="form-control-plaintext" value="lorem@gmail.com">
+                    </div>
+                </div>
+                <hr>
+
+                <div class="row">
+                    <div class="col-sm-3">
+                        <p class="lead">Password</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="password" readonly class="form-control-plaintext" value="123456">
+                    </div>
+                </div>
+                <hr>
+
+                <div class="row">
+                    <div class="col-sm-3">
+                        <p class="lead">Adresse</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="text" readonly class="form-control-plaintext" value="quel Adresse">
+                    </div>
+                </div>
+                <div class="row justify-content-center" id="btn-profil">
+                    <div class="col-sm-6">
+                        <i class="fas fa-edit btn btn-info"></i>
+                        <i class="fas fa-save btn btn-warning"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5" id="info-cours">
+                <h1 class="display-4">Info Cours</h1>
+                <!-- <h4 class="display-6"> Les Cours </h4> -->
+
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Nom de Cours</th>
+                            <th>Prix</th>
+                            <th>Completion</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>GOLD Package</td>
+                            <td>500€</td>
+                            <td><div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div></td>
+                        </tr>
+
+                        <tr>
+                            <td>SILVER Package</td>
+                            <td>250€</td>
+                            <td><div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 0" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div></td>
+                        </tr>
+
+                        <tr>
+                            <td>BRONZE Package</td>
+                            <td>100€</td>
+                            <td><div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 73%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div></td>
+                        </tr>   
+                    </tbody>
+                </table>
+
+                <div class="row justify-content-center">
+                    <div class="col-sm-5">
+                        <a href="../index.html#package-cours" class="btn btn-primary">Ajouter plus</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-10" id="info-projet">
+                <h1 class="display-4">Info Projet</h1>
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Nom de Package</th>
+                            <th>Prix</th>
+                            <th>Completion</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>IRON Package</td>
+                            <td>100€</td>
+                            <td><div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div></td>
+                        </tr>
+
+                        <tr>
+                            <td>PLATINUM Package</td>
+                            <td>250€</td>
+                            <td><div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 45%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div></td>
+                        </tr>
+
+                        <tr>
+                            <td>DIAMOND Package</td>
+                            <td>550€</td>
+                            <td>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 73%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </td>
+                        </tr>   
+                    </tbody>
+                </table>
+                <div class="row justify-content-center">
+                    <div class="col-sm-5">
+                        <a href="../index.html#package-creation" class="btn btn-primary">Ajouter Plus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+

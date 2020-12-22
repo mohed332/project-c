@@ -1,0 +1,29 @@
+.Container-fluid{
+    background-color: #f7f7f7;
+}
+#info-perso, #info-projet,#info-cours {
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    margin:5px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1),
+                0 1px 2px 0 rgba(0,0,0,.06);
+}
+#btn-profil {
+    margin-bottom: 15px;
+}
+#img-avatar {
+    width: 120px;
+    margin-bottom: 5%;
+}
+
+.btn-primary {
+    background-color: #8400FF !important;
+    border-color: transparent !important;
+}
+
+.btn-primary:hover {
+    background-color: #7313c3 !important;
+}
+ table .thead-dark th {
+    background-color: #8400FF !important;
+}
