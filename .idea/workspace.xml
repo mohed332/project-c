@@ -2,6 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aca3ceed-c1d7-4c40-973f-bbfdb3947a00" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/imgs/bg-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/imgs/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/imgs/img-avatar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/imgs/img-mix/500x500.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/imgs/img-mix/altumcode-zE007SNgcdE-unsplash.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/imgs/img-mix/chaps_1x.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/imgs/img-mix/charles-deluvio-pjAH2Ax4uWk-unsplash.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/imgs/img-mix/code-1076533.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/imgs/img-mix/code-1076533_1920.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/imgs/img-mix/everycowboy_dribbbleready_shot.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/imgs/img-mix/image-base.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/imgs/img-mix/image360-260.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/imgs/img-mix/image400-300.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/imgs/img-mix/image800-500.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/imgs/img-mix/ithinkican_01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/imgs/img-mix/m.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/imgs/img-mix/programming-5287885.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/imgs/img-mix/programming-5287885_1920.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/imgs/img-mix/raspberry.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/imgs/img-mix/reactjs-banner.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/imgs/img-mix/silver.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/imgs/img-mix/sketch_1x.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/imgs/img-mix/web-3967926_1920.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/imgs/img-mix/web-dev-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/imgs/img-mix/web-dev-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/imgs/img-mix/web-dev-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/imgs/img-mix/web-dev.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/imgs/logo/Untitled-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/imgs/logo/logo2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/imgs/pkg-imgs/bronze-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/imgs/pkg-imgs/diamond-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/imgs/pkg-imgs/gold-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/imgs/pkg-imgs/iron-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/imgs/pkg-imgs/platinum-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/imgs/pkg-imgs/silver-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -11,12 +49,14 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution />
+    <execution>
+      <executable path="composer" />
+    </execution>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.3">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/symfony/cache-contracts" />
       <path value="$PROJECT_DIR$/vendor/symfony/finder" />
@@ -94,12 +134,17 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../starter" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="$PROJECT_DIR$/../../../Program Files/nodejs/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.customizations" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\project-c\templates" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -112,10 +157,18 @@
       <workItem from="1608287298279" duration="5716000" />
       <workItem from="1608299109384" duration="24000" />
       <workItem from="1608299133974" duration="10244000" />
+      <workItem from="1608637981233" duration="21000" />
+      <workItem from="1608638013881" duration="460000" />
+      <workItem from="1608638492480" duration="7604000" />
+      <workItem from="1608652738507" duration="674000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
