@@ -1,77 +1,14 @@
 {% extends 'base.html.twig' %}
 
-{% block content %}
+{% block body %}
 
-<div class="container" >
-        <form class="form-login" id="form-registation" >
-            <!-- title de form -->
-            <h4 class="display-4 text-center">Register</h4>
-            <!-- prenom -->
-            <div class="form-group">
-                <label for="prenom">Prénom</label>
-                <input type="text" name="prenom" class="form-control" placeholder="Prenom">
+    <div class="container">
+        <div class="row">
+            <div class="col-8 mx-auto">
+                <h1>Inscription</h1>
+                {{ form(form) }}
             </div>
-            <!-- nom -->
-            <div class="form-group">
-                <label for="nom">Nom</label>
-                <input type="text" name="nom" class="form-control" placeholder="Nom">
-            </div>
-            <!-- email -->
-            <div class="form-group">
-                <label for="email">E-mail</label>
-                <input type="mail" name="email" class="form-control" placeholder="E-mail">
-            </div>
-            <!-- date de naissance -->
-            <div class="form-group">
-                <label for="date-de-naissance">Date de Naissance</label>
-                <input type="date" name="date-de-naissance" class="form-control" placeholder="Date de Naissance">
-            </div>
-            <!-- username -->
-            <div class="form-group">
-                <label for="username">Username</label>
-                <input type="text" name="username" class="form-control" placeholder="Username">
-            </div>
-            <!-- mot de passe -->
-            <div class="form-group">
-                <label for="password">Mot de Passe</label>
-                <input type="password" name="password" class="form-control" placeholder="mot de passe">
-            </div>
-            <!-- confirm mot de passe -->
-            <div class="form-group" id="confirm-mdp">
-                <label for="confirme-password">Confirme Mot de Passe</label>
-                <input type="password" name="password" class="form-control" placeholder="mot de passe">
-            </div>
-
-            <!-- téléphone -->
-            <div class="form-group">
-                <label for="telephone">Téléphone</label>
-                <input type="tel" name="telephone" class="form-control" placeholder="Téléphone">
-            </div>
-
-            <!-- adresse -->
-            <div class="form-group">
-                <label for="adresse">Adresse</label>
-                <input type="address" name="adresse" class="form-control" placeholder="Adresse">
-            </div>
-
-            <!-- ville -->
-            <div class="form-group">
-                <label for="ville">Ville</label>
-                <input type="text" name="ville" class="form-control" placeholder="Ville">
-            </div>
-
-            <!-- code postale -->
-            <div class="form-group">
-                <label for="code-postale">Code Postale</label>
-                <input type="text" name="code-postale" class="form-control" placeholder="Code Postale">
-            </div>
-
-            <!-- submit bouton -->
-            <div class="form-group text-center">
-                <input type="submit" name="submit" class="btn btn-primary form-control">
-            </div>
-            <p class="lead text-center">Déja un Compte? <a href="./login.html">Login Now</a></p>
-        </form>
+        </div>
     </div>
 
 {% endblock %}
