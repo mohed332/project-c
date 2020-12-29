@@ -222,6 +222,7 @@ nav .nav-link:hover {
 #contactez-nous form {
 	width: 50%;
 	margin: 0 auto;
+	text-align: center;
 }
 #contactez-nous #submit-btn {
 	background-color: #8400FF;

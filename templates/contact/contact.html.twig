@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}A votre service{% endblock %}
+
+{% block body %}
+    <div>
+        <h4 class="display-4 text-center">Contactez Nous</h4>
+    </div>
+    <div class="bg-white p-5 contact-form" id="contactez-nous">
+        <form>
+        <div class="form-group">
+            {{ form_start(form) }}
+            {{ form_row(form.fullname, {'attr': {'class': 'form-control'}}) }}
+        </div>
+        <div class="form-group">
+            {{ form_row(form.email, {'attr': {'class': 'form-control'}}) }}
+        </div>
+        <div class="form-group">
+            {{ form_row(form.message, {'attr': {'class': 'form-control'}}) }}
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Envoyez votre message" id="submit-btn" class="btn btn-primary py-3 px-5">
+        </div>
+        {{ form_end(form) }}
+        </form>
+        </div>
+    </div>
+{% endblock %}
