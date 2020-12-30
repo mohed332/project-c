@@ -1,0 +1,81 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <div class="container" id="admin">
+        <!-- debut de acceuil breadcrumb -->
+
+        <div class="row justify-content-around">
+            <div class="col-md-5">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Numéro Packages Cours</h5>
+                        Total Number
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Numéro Package Création</h5>
+                        Total Number
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- fin de acceuil breadcrumb -->
+
+        <!-- début des packages -->
+
+        <div class="container" id="packages-admin">
+            <div>
+                <h4 class="display-4">
+                    Gérer les Packages
+                </h4>
+            </div>
+            <form action="">
+                <div class="form-group">
+                    <label for="nom-de-package">Nom de Package</label>
+                    <input type="text" name="nom-package" class="form-control" placeholder="Nom de Package">
+                </div>
+
+                <div class="form-group">
+                    <label for="description-de-package">Déscription de Package</label>
+                    <textarea type="text" name="nom-package" class="form-control" rows="10" placeholder="Déscription de Package"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="image-de-package">Image de Package</label><br>
+                    <input id="uploadFile" placeholder="Choose File" disabled="disabled" />
+                    <div class="fileUpload btn btn-primary">
+                        <span>Upload</span>
+                        <input id="uploadBtn" type="file" class="upload" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="prix-de-package">Prix de Package</label>
+                    <input type="text" name="nom-package" class="form-control" placeholder="Prix de Package">
+                </div>
+
+                <div>
+                    <input type="checkbox" id="package-creation" name="package-creation">
+                    <label for="package-creation">Package Création</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="package-cours" name="package-cours">
+                    <label for="package-cours">Package Cours</label>
+                </div>
+
+                <div class="submit-btn text-center">
+                    <input type="submit" name="submit" id="" class="btn btn-primary">
+                </div>
+            </form>
+        </div>
+
+        <!-- fin des packages -->
+    </div>
+
+{% endblock %}
