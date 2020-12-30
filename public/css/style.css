@@ -185,8 +185,53 @@ nav .nav-link:hover {
 		left: 0px;
 	}
 
+/* début de profil*/
 
+#profile {
+	background-color: #f7f7f7;
+}
+ #info-perso, #info-projet,#info-cours {
+	background-color: #fff;
+	border: 1px solid rgba(0,0,0,.125);
+	margin:5px;
+	 padding: 10px;
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,.1),
+	0 1px 2px 0 rgba(0,0,0,.06);
+}
+#btn-profil {
+	margin-bottom: 15px;
+}
+#img-avatar {
+	width: 120px;
+	margin-bottom: 5%;
+}
 
+.btn-primary {
+	background-color: #8400FF !important;
+	border-color: transparent !important;
+}
+
+.btn-primary:hover {
+	background-color: #7313c3 !important;
+}
+#profile table .thead-dark th {
+	background-color: #8400FF !important;
+}
+
+/* fin de profil*/
+/* début de panier*/
+#panier .btn-success{
+	background: #8400ff;
+	border: #8400FF;
+}
+#panier .btn-success:hover {
+	background: #7313c3;
+}
+#panier .btn-success:focus {
+	border: #8400FF;
+	box-shadow: none;
+}
+/* fin de panier*/
   /* section de prix */
   
 .pricing4 {
