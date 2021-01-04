@@ -2,110 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aca3ceed-c1d7-4c40-973f-bbfdb3947a00" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Form/ContactType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/project-c.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project-c.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/BDD.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/bdd-dbdesigner.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/charte.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/imgs/bg-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/imgs/bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/imgs/img-avatar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/imgs/img-mix/500x500.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/imgs/img-mix/altumcode-zE007SNgcdE-unsplash.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/imgs/img-mix/chaps_1x.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/imgs/img-mix/charles-deluvio-pjAH2Ax4uWk-unsplash.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/imgs/img-mix/code-1076533.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/imgs/img-mix/code-1076533_1920.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/imgs/img-mix/everycowboy_dribbbleready_shot.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/imgs/img-mix/image-base.jfif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/imgs/img-mix/image360-260.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/imgs/img-mix/image400-300.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/imgs/img-mix/image800-500.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/imgs/img-mix/ithinkican_01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/imgs/img-mix/m.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/imgs/img-mix/programming-5287885.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/imgs/img-mix/programming-5287885_1920.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/imgs/img-mix/raspberry.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/imgs/img-mix/reactjs-banner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/imgs/img-mix/silver.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/imgs/img-mix/sketch_1x.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/imgs/img-mix/web-3967926_1920.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/imgs/img-mix/web-dev-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/imgs/img-mix/web-dev-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/imgs/img-mix/web-dev-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/imgs/img-mix/web-dev.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/imgs/logo/Untitled-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/imgs/logo/logo2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/imgs/pkg-imgs/bronze-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/imgs/pkg-imgs/diamond-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/imgs/pkg-imgs/gold-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/imgs/pkg-imgs/iron-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/imgs/pkg-imgs/platinum-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/imgs/pkg-imgs/silver-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/login-register/login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/login-register/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/login-register/login.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/login-register/register.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/package-contenu/package-cours/bronze.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/package-contenu/package-cours/gold.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/package-contenu/package-cours/silver.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/package-contenu/package-creation/diamond.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/package-contenu/package-creation/iron.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/package-contenu/package-creation/platinum.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/pageaccueilpng.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/panier/panier.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/panier/panier.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/profil/profil.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/profil/profil.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-c-front/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/components/_footer.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/components/_footer.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/components/_nav.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/components/_nav.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/default/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/default/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/imgs/bg-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/imgs/bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/imgs/img-avatar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/imgs/img-mix/500x500.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/imgs/img-mix/altumcode-zE007SNgcdE-unsplash.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/imgs/img-mix/chaps_1x.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/imgs/img-mix/charles-deluvio-pjAH2Ax4uWk-unsplash.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/imgs/img-mix/code-1076533.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/imgs/img-mix/code-1076533_1920.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/imgs/img-mix/everycowboy_dribbbleready_shot.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/imgs/img-mix/image-base.jfif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/imgs/img-mix/image360-260.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/imgs/img-mix/image400-300.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/imgs/img-mix/image800-500.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/imgs/img-mix/ithinkican_01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/imgs/img-mix/m.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/imgs/img-mix/programming-5287885.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/imgs/img-mix/programming-5287885_1920.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/imgs/img-mix/raspberry.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/imgs/img-mix/reactjs-banner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/imgs/img-mix/silver.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/imgs/img-mix/sketch_1x.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/imgs/img-mix/web-3967926_1920.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/imgs/img-mix/web-dev-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/imgs/img-mix/web-dev-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/imgs/img-mix/web-dev-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/imgs/img-mix/web-dev.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/imgs/logo/Untitled-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/imgs/logo/logo2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/imgs/pkg-imgs/bronze-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/imgs/pkg-imgs/diamond-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/imgs/pkg-imgs/gold-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/imgs/pkg-imgs/iron-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/imgs/pkg-imgs/platinum-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/imgs/pkg-imgs/silver-3.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,6 +104,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/mailer" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
       <path value="$PROJECT_DIR$/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/vendor/symfony/web-profiler-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1lpHpfXEtOOmb8okCM4esBzezqN" />
@@ -248,6 +152,8 @@
       <workItem from="1609145553098" duration="468000" />
       <workItem from="1609167814526" duration="28465000" />
       <workItem from="1609316760891" duration="5264000" />
+      <workItem from="1609329782989" duration="198000" />
+      <workItem from="1609331045575" duration="3042000" />
     </task>
     <servers />
   </component>
