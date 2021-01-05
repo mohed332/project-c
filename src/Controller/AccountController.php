@@ -6,16 +6,13 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class DefaultController extends AbstractController
+class AccountController extends AbstractController
 {
     /**
-     * @Route("/", name="default_index",methods={"GET"})
-     * @return Response
+     * @Route("/compte", name="account")
      */
     public function index(): Response
     {
-        return $this->render('default/index.html.twig', [
-            'controller_name' => 'DefaultController',
-        ]);
+        return $this->render('account/index.html.twig');
     }
 }

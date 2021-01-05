@@ -1,15 +1,15 @@
 <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light  ">
-    <a class="navbar-brand" href="/accueil"><img src="{{ asset('imgs/logo/logo2') }}" id="logo" alt=""></a>
+    <a class="navbar-brand" href="/"><img src="{{ asset('imgs/logo/logo2') }}" id="logo" alt=""></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <!-- navbar primary -->
         <ul class="navbar-nav" id="nav-primaire">
-            <a class="nav-link" href="/accueil#package-creation">Créons Votre site</a>
-            <a class="nav-link" href="/accueil#package-cours">Apprenez à Coder</a>
+            <a class="nav-link" href="/#package-creation">Confiez nous votre site</a>
+            <a class="nav-link" href="/#package-cours">Apprenez à Coder</a>
             <a class="nav-link" href="/contact">Contactez Nous</a>
-            <a class="nav-link" href="/accueil#qui-sommes-nous">Qui sommes Nous?</a>
+            <a class="nav-link" href="/#qui-sommes-nous">Qui sommes Nous?</a>
         </ul>
         <!-- fin de navbar primary -->
 
@@ -28,12 +28,18 @@
                 <a href="/add" class="nav-link"><i class="fas fa-users-cog"></i> Admin </a>
             </li>
 
-            <!-- pour connexion/déconnexion -->
+            <!-- pour connexion/déconnexion
             <li class="nav-item">
                 <a href="{{asset('/inscription') }}" class="nav-link">
-                    <i class="fas fa-user"></i> Login/Register
+                    {% if app.user %}
+                    <a href="{{ path('account') }}">Mon compte</a> | <a href="{{ path ('app_logout') }}">Déconnexion</a>
+                    {% else %}
+                    <a href="{{ path ('app_login') }}">Connexion</a> | <a href="{{ path ('register') }}">Inscription</a>
+                    {% endif %}
+
                 </a>
             </li>
+            -->
             <!-- pour la cart  -->
             <li class="nav-item">
                 <a href="{{ asset('/panier') }}" class="nav-link">
@@ -51,8 +57,16 @@
                 </a>
                 <div class="dropdown-menu dropdown-menu-lg-right dropdown-secondary"
                      aria-labelledby="navbarDropdownMenuLink-55">
-                    <a class="dropdown-item" href="{{ asset('/profile') }}">Voir Profil</a>
-                    <a class="dropdown-item" href="#">Déconnexion</a>
+                    <a href="{{asset('/inscription') }}" class="nav-link">
+                        {% if app.user %}
+                            <a class="dropdown-item nav-link" href="{{ path('account') }}">Mon compte</a>
+                            <a  class="nav-link dropdown-item" href="{{ path ('app_logout') }}">Déconnexion</a>
+                        {% else %}
+                            <a class="dropdown-item nav-link" href="{{ path ('app_login') }}">Connexion</a>
+                            <a class="dropdown-item nav-link" href="{{ path ('register') }}">Inscription</a>
+                        {% endif %}
+
+                    </a>
                 </div>
             </li>
         </ul>
