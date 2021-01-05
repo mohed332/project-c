@@ -29,7 +29,7 @@ class ContactController extends AbstractController
                     $contactFormData['message'],
                     'text/plain');
             $mailer->send($message);
-            $this->addFlash('success', 'Votre message a été envoyé');
+            $this->addFlash('success', 'Votre message a été envoyé, nous y répondrons dans les plus brefs délais.');
             return $this->redirectToRoute('default_index');
         }
 

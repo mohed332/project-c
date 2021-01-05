@@ -35,7 +35,7 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-	color: #8400ff !important;
+	color: #fff !important;
   }
 
   .jumbotron {
@@ -47,7 +47,7 @@ html {
   }
 
 	.jumbotron  div p{
-	color: #8400ff !important;
+	color: #fff !important;
 }
 
 #header .bg-img {
