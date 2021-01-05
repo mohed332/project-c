@@ -35,6 +35,7 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+	color: #8400ff !important;
   }
 
   .jumbotron {
@@ -42,10 +43,13 @@ html {
     align-items: center;
     justify-content: center;
     text-align: center;
+
   }
-#header {
-	color: #fff;
+
+	.jumbotron  div p{
+	color: #8400ff !important;
 }
+
 #header .bg-img {
 	height: auto;
 	min-height: 450px !important;
@@ -63,7 +67,7 @@ nav .nav-link:hover {
 
 #nav-secondaire .dropdown-item:hover {
 	color: #fff;
-	background-color: #7313C3;
+	background-color: #7313c3;
 
 }
 .rounded-circle { /* pour l'avatar de profile */
@@ -96,7 +100,48 @@ nav .nav-link:hover {
 	ul.nav-menu li a:hover, ul.nav-menu li a.active{
 		color: #2c3e50;
 	} 
+	/* debut de page admin */
+#admin .row {
+	margin-top: 2.5rem;
+}
+#packages-admin {
+	width: 50%;
+	margin: 0 auto;
+}
 
+.btn-primary {
+	background: #8400ff;
+	border: none;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+	background-color: #7313c3 !important;
+	border: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active{
+	background: #8400ff;
+}
+
+.fileUpload {
+	position: relative;
+	overflow: hidden;
+	margin: 10px;
+}
+.fileUpload input.upload {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+/* fin de page admin*/
 	/** content **/
 	.content{
 		margin-top: 100px;
@@ -144,8 +189,53 @@ nav .nav-link:hover {
 		left: 0px;
 	}
 
+/* début de profil*/
 
+#profile {
+	background-color: #f7f7f7;
+}
+ #info-perso, #info-projet,#info-cours {
+	background-color: #fff;
+	border: 1px solid rgba(0,0,0,.125);
+	margin:5px;
+	 padding: 10px;
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,.1),
+	0 1px 2px 0 rgba(0,0,0,.06);
+}
+#btn-profil {
+	margin-bottom: 15px;
+}
+#img-avatar {
+	width: 120px;
+	margin-bottom: 5%;
+}
 
+.btn-primary {
+	background-color: #8400FF !important;
+	border-color: transparent !important;
+}
+
+.btn-primary:hover {
+	background-color: #7313c3 !important;
+}
+#profile table .thead-dark th {
+	background-color: #8400FF !important;
+}
+
+/* fin de profil*/
+/* début de panier*/
+#panier .btn-success{
+	background: #8400ff;
+	border: #8400FF;
+}
+#panier .btn-success:hover {
+	background: #7313c3;
+}
+#panier .btn-success:focus {
+	border: #8400FF;
+	box-shadow: none;
+}
+/* fin de panier*/
   /* section de prix */
   
 .pricing4 {

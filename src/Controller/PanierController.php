@@ -6,15 +6,15 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class AdminController extends AbstractController
+class PanierController extends AbstractController
 {
     /**
-     * @Route("/admin", name="admin")
+     * @Route("/panier", name="panier")
      */
     public function index(): Response
     {
-        return $this->render('admin/index.html.twig',[
-        'controller_name' => 'AdminController',
+        return $this->render('panier/index.html.twig', [
+            'controller_name' => 'PanierController',
         ]);
     }
 }
