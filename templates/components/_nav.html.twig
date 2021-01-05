@@ -18,7 +18,9 @@
         <!-- pour la page admin -->
         <ul class="navbar-nav ml-auto d-flex" id="nav-secondaire">
             <li class="nav-item d-flex" id="admin">
+                {% if is_granted('ROLE_ADMIN') %}
                 <a href="/admin" class="nav-link"><i class="fas fa-users-cog"></i> Admin </a>
+                {% endif %}
             </li>
 
             <!-- pour connexion/déconnexion
