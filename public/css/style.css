@@ -35,6 +35,7 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+	color: #8400ff !important;
   }
 
   .jumbotron {
@@ -42,10 +43,13 @@ html {
     align-items: center;
     justify-content: center;
     text-align: center;
+
   }
-#header {
-	color: #fff;
+
+	.jumbotron  div p{
+	color: #8400ff !important;
 }
+
 #header .bg-img {
 	height: auto;
 	min-height: 450px !important;
@@ -63,7 +67,7 @@ nav .nav-link:hover {
 
 #nav-secondaire .dropdown-item:hover {
 	color: #fff;
-	background-color: #7313C3;
+	background-color: #7313c3;
 
 }
 .rounded-circle { /* pour l'avatar de profile */
