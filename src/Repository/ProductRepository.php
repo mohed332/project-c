@@ -5,6 +5,7 @@ namespace App\Repository;
 use App\Entity\Product;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
+use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 /**
  * @method Product|null find($id, $lockMode = null, $lockVersion = null)
@@ -19,32 +20,44 @@ class ProductRepository extends ServiceEntityRepository
         parent::__construct($registry, Product::class);
     }
 
-    // /**
-    //  * @return Product[] Returns an array of Product objects
-    //  */
-    /*
-    public function findByExampleField($value)
+    /**
+     * @param $packageName
+     * @param $packageDes
+     * @param $packageImage
+     * @param $packagePrice
+     * @param $packageType
+     * @throws \Doctrine\ORM\ORMException
+     * @throws \Doctrine\ORM\OptimisticLockException
+     */
+    public function manageProducts($packageName, $packageDes, $packageImage, $packagePrice, $packageType)
     {
-        return $this->createQueryBuilder('p')
-            ->andWhere('p.exampleField = :val')
-            ->setParameter('val', $value)
-            ->orderBy('p.id', 'ASC')
-            ->setMaxResults(10)
-            ->getQuery()
-            ->getResult()
-        ;
+        $product = new Product();
+        $product->setName($packageName);
+        $product->setDescription($packageDes);
+        $product->setPhoto($packageImage);
+        $product->setPrice($packagePrice);
+        $product->setCourseType($packageType);
+        $this->getEntityManager()->persist($product);
+        $this->getEntityManager()->flush();
     }
-    */
-
-    /*
-    public function findOneBySomeField($value): ?Product
+    /**
+     * @param $packageName
+     * @param $packageDes
+     * @param $packageImage
+     * @param $packagePrice
+     * @param $packageType
+     * @throws \Doctrine\ORM\ORMException
+     * @throws \Doctrine\ORM\OptimisticLockException
+     */
+    public function manageProduct($packageName, $packageDes, $packageImage, $packagePrice, $packageType, $allPackages)
     {
-        return $this->createQueryBuilder('p')
-            ->andWhere('p.exampleField = :val')
-            ->setParameter('val', $value)
-            ->getQuery()
-            ->getOneOrNullResult()
-        ;
+        $package = $this->findOneBy(['id' => $allPackages]);
+        $package->setName($packageName);
+        $package->setDescription($packageDes);
+        $package->setPhoto($packageImage);
+        $package->setPrice($packagePrice);
+        $package->setCourseType($packageType);
+        $this->getEntityManager()->persist($package);
+        $this->getEntityManager()->flush();
     }
-    */
 }

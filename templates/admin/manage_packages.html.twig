@@ -1,0 +1,172 @@
+{% extends 'base.html.twig' %}
+
+{% block body  %}
+    <body style="background-color: lightcyan">
+{#<script>#}
+{#    $(document).ready(function () {#}
+{#    console.log("price");#}
+{#    $("#add_package").on('click', function (e) {#}
+{#    e.preventDefault();#}
+{#    let packageName = $('#package_name').val();#}
+{#    let packageDescription = $('#package_description').val();#}
+{#    let packagePrice = $('#package_price').val();#}
+{#    let coursePackage = $('#course_package').val();#}
+{#    let creationPackage = $('#creation_package').val();#}
+{#    console.log(packageName, packageDescription, packagePrice, coursePackage, creationPackage);#}
+
+{#    });#}
+{#    });#}
+{#</script>#}
+        <!-- Button trigger modal -->
+        <br><br><br><br>
+        <div style="padding-left:144px">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                Add Package
+            </button>
+        </div>
+        <p style="padding-left:144px">
+            <b>Note:</b> Packages may be of creation or Course type
+        </p>
+
+        <br>gi
+
+        <div style="width: 1698px; padding-left: 143px;">
+        <table id="example" class="center">
+            <thead>
+            <tr>
+                <th>Package Id</th>
+                <th>Package Name</th>
+                <th>Package Description</th>
+                <th>Package Course Type</th>
+                <th>Package Price</th>
+                <th>Edit</th>
+            </tr>
+            </thead>
+            <tbody>
+
+                {% for package in packages %}
+                <tr>
+                    <td>{{ package.getId() }}</td>
+                    <td>{{ package.getName() }}</td>
+                    <td>{{ package.getDescription() }}</td>
+                    <td>{{ package.getCourseType() }}</td>
+                    <td>{{ package.getPrice() }}</td>
+                    <td><a href="{{ path('edit_package_details', {'id': package.getId()}) }}" id="back-transac" class="btn btn-primary">Edit</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        </div>
+
+        {% block javascripts %}
+            <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
+            <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
+            <script>
+                $(function(){
+                    $("#example").dataTable();
+                });
+            </script>
+        {% endblock %}
+    </body>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Add Package</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="{{ path("add_package_details") }}" enctype="multipart/form-data" method="post">
+                        <div class="modal-body">
+                            <div class="container">
+                                <br />
+                                <br />
+                                <div class="form-group">
+                                    <div class="form-group">
+                                        <label for="package_name">Package Name</label>
+                                        <input type="text" class="form-control" id="package_name" name="package_name" aria-describedby="emailHelp" placeholder="Enter package name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="package_description">Package Description</label>
+                                        <input type="text" class="form-control" id="package_description" name="package_description" placeholder="Enter package description" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="package_image">Package Image</label>
+                                        <input type="file" id="package_image" name="package_image" class="fileUpload" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="package_price">Package Price ($)</label>
+                                        <label for="text"></label><input type="text" class="form-control" id="package_price" name="package_price" placeholder="Enter package price ($)" required/>
+                                    </div>
+                                    <label for="course_package">Package Type (course | creation) </label>
+                                    <label for="package_type"></label><input type="text" class="form-control" id="package_type" name="package_type" placeholder="Enter package type (course | creation)" required/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer justify-content-center">
+                            <div class="cancel-data-btn" id="btn-dif-share-client">
+                                <button type="button" class="btn btn-outline-danger invite-client-btn" data-dismiss="modal">Cancel</button>
+                            </div>
+                            <button type="submit" class="btn btn-primary" id="add_package">Add Package</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog"
+         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Add Package</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="{{ path("add_package_details") }}" enctype="multipart/form-data" method="post">
+                        <div class="modal-body">
+                            <div class="container">
+                                <br />
+                                <br />
+                                <div class="form-group">
+                                    <div class="form-group">
+                                        <label for="package_name">Package Name</label>
+                                        <input type="text" class="form-control" id="package_name" name="package_name" aria-describedby="emailHelp" placeholder="Enter package name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="package_description">Package Description</label>
+                                        <input type="text" class="form-control" id="package_description" name="package_description" placeholder="Enter package description" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="package_image">Package Image</label>
+                                        <input type="file" id="package_image" name="package_image" class="fileUpload" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="package_price">Package Price ($)</label>
+                                        <label for="text"></label><input type="text" class="form-control" id="package_price" name="package_price" placeholder="Enter package price ($)" required/>
+                                    </div>
+                                    <label for="course_package">Package Type (course | creation) </label>
+                                    <label for="package_type"></label><input type="text" class="form-control" id="package_type" name="package_type" placeholder="Enter package type (course | creation)" required/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer justify-content-center">
+                            <div class="cancel-data-btn" id="btn-dif-share-client">
+                                <button type="button" class="btn btn-outline-danger invite-client-btn" data-dismiss="modal">Cancel</button>
+                            </div>
+                            <button type="submit" class="btn btn-primary" id="add_package">Add Package</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

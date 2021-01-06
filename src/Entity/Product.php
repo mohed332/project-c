@@ -33,6 +33,27 @@ class Product
     private $description;
 
     /**
+     * @ORM\Column(type="string", length=500)
+     */
+    private $courseType;
+
+    /**
+     * @return mixed
+     */
+    public function getCourseType()
+    {
+        return $this->courseType;
+    }
+
+    /**
+     * @param mixed $courseType
+     */
+    public function setCourseType($courseType): void
+    {
+        $this->courseType = $courseType;
+    }
+
+    /**
      * @ORM\Column(type="string", length=255)
      */
     private $photo;
